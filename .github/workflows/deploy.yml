@@ -12,10 +12,12 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12
-    - run: yarn install
+    - name: Install dependencies
       working-directory: packages/ui
-    - run: yarn build
+      run: yarn install
+    - name: Build UI
       working-directory: packages/ui
+      run: yarn build
     - name: Publish
       uses: cloudflare/wrangler-action@1.2.0
       working-directory: packages/ui
