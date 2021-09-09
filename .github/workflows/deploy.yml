@@ -28,4 +28,4 @@ jobs:
         apiToken: ${{ secrets.CF_API_TOKEN }}
       env:
         IS_WORKER: true
-        workingDirectory: 'packages/ui'
+        workingDirectory: './packages/ui'
