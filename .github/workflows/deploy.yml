@@ -13,9 +13,12 @@ jobs:
       with:
         node-version: 12
     - run: yarn install
+      working-directory: packages/ui
     - run: yarn build
+      working-directory: packages/ui
     - name: Publish
       uses: cloudflare/wrangler-action@1.2.0
+      working-directory: packages/ui
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
       env:
