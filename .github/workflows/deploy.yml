@@ -18,9 +18,9 @@ jobs:
     - name: Build UI
       working-directory: packages/ui
       run: yarn build
-    - name: Publish
-      uses: cloudflare/wrangler-action@1.2.0
+    - name: Deploy worker
       working-directory: packages/ui
+      uses: cloudflare/wrangler-action@1.2.0
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
       env:
