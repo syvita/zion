@@ -26,6 +26,6 @@ jobs:
       uses: cloudflare/wrangler-action@1.3.0
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
+        workingDirectory: packages/ui
       env:
-        workingDirectory: ./packages/ui
         IS_WORKER: true
