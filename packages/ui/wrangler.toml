@@ -1,7 +1,7 @@
 name = "ui"
 type = "webpack"
 account_id = "c60e829b3831ea5b11b2398ef68bda23"
-workers_dev = true
+workers_dev = false
 route = "zion.land/*"
 zone_id = "71028c3c580a3c2678ec17553042cca1"
 webpack_config = "node_modules/flareact/webpack"
