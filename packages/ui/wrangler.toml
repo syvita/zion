@@ -6,6 +6,10 @@ route = "zion.land/*"
 zone_id = "71028c3c580a3c2678ec17553042cca1"
 webpack_config = "node_modules/flareact/webpack"
 
+kv_namespaces = [
+  { binding = "Zion", id = "1b7a1ecc8323448d9039addeaa990bce", preview_id = "34dbcb92daf945aeb5e6d88e6c87789c" }
+]
+
 [site]
 bucket = "out"
 entry-point = "./"
