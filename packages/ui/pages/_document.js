@@ -9,7 +9,6 @@ class MyDocument extends Document {
         ...props,
         styles: (
           <>
-            {props.styles}
             {styles}
           </>
         )
